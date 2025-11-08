@@ -1,4 +1,4 @@
-namespace LusterShop.Models
+namespace LusterShop.Web.Models
 {
     public class ErrorViewModel
     {

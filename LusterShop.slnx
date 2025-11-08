@@ -1,3 +1,7 @@
 <Solution>
-  <Project Path="LusterShop/LusterShop.csproj" />
+  <Project Path="LusterShop.Application/LusterShop.Application.csproj" />
+  <Project Path="LusterShop.Data/LusterShop.Data.csproj" />
+  <Project Path="LusterShop.Domain/LusterShop.Domain.csproj" />
+  <Project Path="LusterShop.IoC/LusterShop.IoC.csproj" />
+  <Project Path="LusterShop/LusterShop.Web.csproj" />
 </Solution>

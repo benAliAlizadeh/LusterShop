@@ -1,8 +1,8 @@
 using System.Diagnostics;
-using LusterShop.Models;
+using LusterShop.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LusterShop.Controllers
+namespace LusterShop.Web.Controllers
 {
     public class HomeController : Controller
     {
