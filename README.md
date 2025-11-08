@@ -1,5 +1,4 @@
 
-```markdown
 # LusterShop
 ## Modern E-Commerce Platform (Chandelier & Lighting Store)
 
@@ -43,6 +42,7 @@ This project was created as part of a **software development course** to demonst
 ---
 
 ## Project Structure
+```
 LusterShop/
 ├── LusterShop.Web/              (ASP.NET Core MVC - Presentation Layer)
 ├── LusterShop.Application/      (Use Cases, DTOs, Interfaces)
@@ -51,7 +51,7 @@ LusterShop/
 ├── LusterShop.Tests/            (xUnit / NUnit tests - optional)
 ├── README.md
 └── LusterShop.sln
-
+```
 
 ---
 
@@ -66,48 +66,70 @@ LusterShop/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YourUsername/LusterShop.git
+git clone https://github.com/benAliAlizadeh/LusterShop.git
 cd LusterShop
+```
 
-2. Restore packages
-bashdotnet restore
-3. Configure database
-Update connection string in LusterShop.Web/appsettings.json:
-json{
+### 2. Restore packages
+```bash
+dotnet restore
+```
+
+### 3. Configure database
+Update connection string in `LusterShop.Web/appsettings.json`:
+```json
+{
   "ConnectionStrings": {
     "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=LusterShopDb;Trusted_Connection=True;MultipleActiveResultSets=true"
   }
 }
+```
 
-4. Apply migrations
-bashcd LusterShop.Web
+### 4. Apply migrations
+```bash
+cd LusterShop.Web
 dotnet ef migrations add InitialCreate --project ../LusterShop.Data
 dotnet ef database update --project ../LusterShop.Data
-5. Run the project
-bashdotnet run
+```
 
-Open browser: https://localhost:5001
+### 5. Run the project
+```bash
+dotnet run
+```
+> Open browser: `https://localhost:5001`
 
-Usage
+---
 
-Customers: Browse products → Add to cart → Checkout
-Admin: Login at /Admin → Manage products, categories, orders
-Seed Data: Initial data (sample chandeliers) added on first migration
+## Usage
+- **Customers**: Browse products → Add to cart → Checkout
+- **Admin**: Login at `/Admin` → Manage products, categories, orders
+- **Seed Data**: Initial data (sample chandeliers) added on first migration
 
+---
 
-Screenshots (Add later)
-textscreenshots/
+## Screenshots (Add later)
+```
+screenshots/
 ├── home.png
 ├── product-detail.png
 ├── cart.png
 ├── admin-dashboard.png
 └── admin-products.png
+```
 
-Contributing
-Contributions, bug reports, and feature suggestions are welcome!
-Open an Issue or submit a Pull Request.
+---
 
-Persian Description (توضیحات فارسی)
-این پروژه یه فروشگاه آنلاین لوستر و روشنایی هست که با دات نت ۹ و ASP.NET Core MVC نوشته شده. از معماری لایه‌ای تمیز (Domain, Application, Data, Web) استفاده می‌کنه و کاملاً قابل گسترش برای فروش هر نوع محصولیه.
-برای درس توسعه نرم‌افزار دانشگاه ساخته شده، ولی کدش حرفه‌ای، عمومی و آماده استفاده در رزومه هست.
-دیتابیس با SQL Server و EF Core مدیریت میشه و از مهاجرت‌ها (Migrations) برای ساخت دیتابیس استفاده شده.
+## Contributing
+Contributions, bug reports, and feature suggestions are welcome!  
+Open an [Issue](https://github.com/benAliAlizadeh/LusterShop/issues) or submit a [Pull Request](https://github.com/benAliAlizadeh/LusterShop/pulls).
+
+---
+
+## Persian Description (توضیحات فارسی)
+این پروژه یه **فروشگاه آنلاین لوستر و روشنایی** هست که با **دات نت ۹** و **ASP.NET Core MVC** نوشته شده. از **معماری لایه‌ای تمیز** (Domain, Application, Data, Web) استفاده می‌کنه و کاملاً **قابل گسترش** برای فروش هر نوع محصولیه.  
+برای درس توسعه نرم‌افزار دانشگاه ساخته شده، ولی کدش **حرفه‌ای، عمومی و آماده استفاده در رزومه** هست.  
+دیتابیس با **SQL Server** و **EF Core** مدیریت میشه و از **مهاجرت‌ها (Migrations)** برای ساخت دیتابیس استفاده شده.
+
+---
+
+**Developed by [Ali Alizadeh](https://alizadeh82.ir/)**
