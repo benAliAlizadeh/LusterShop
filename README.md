@@ -131,5 +131,3 @@ Open an [Issue](https://github.com/benAliAlizadeh/LusterShop/issues) or submit a
 دیتابیس با **SQL Server** و **EF Core** مدیریت میشه و از **مهاجرت‌ها (Migrations)** برای ساخت دیتابیس استفاده شده.
 
 ---
-
-**Developed by [Ali Alizadeh](https://alizadeh82.ir/)**
